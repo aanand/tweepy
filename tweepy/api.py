@@ -744,6 +744,7 @@ class API(object):
         body.append('--' + BOUNDARY + '--')
         body.append('')
         fp.close()
+        print body
         body = '\r\n'.join(body)
 
         # build headers
